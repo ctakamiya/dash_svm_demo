@@ -19,30 +19,16 @@ It includes a few artificially generated datasets that you can choose from the d
 
 The other dropdowns and sliders lets you change the parameters of your classifier, such that it could increase or decrease its accuracy.
 
-### Running the app locally
+### Running the app on CDSW 
+From workbench: 
+- Open up 00_launch_app.py 
+- Run all code
 
-First create a virtual environment with conda or venv inside a temp folder, then activate it.
-
+From the console: 
 ```
-virtualenv dash-svm-venv
-
-# Windows
-dash-svm-venv\Scripts\activate
-# Or Linux
-source venv/bin/activate
+python3 app.py
 ```
 
-Clone the git repo, then install the requirements with pip
-```
-git clone https://github.com/plotly/dash-svm.git
-cd dash-svm
-pip install -r requirements.txt
-```
-
-Run the app
-```
-python app.py
-```
 
 ## About the app
 ### How does it work?
@@ -59,9 +45,6 @@ An SVM is a popular Machine Learning model used in many different fields. You ca
 * [Plotly Python](https://plot.ly/python/) - Used to create the interactive plots
 * [Scikit-Learn](http://scikit-learn.org/stable/documentation.html) - Run the classification algorithms and generate datasets
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
@@ -69,6 +52,8 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 * **Matthew Chan** - *Code Review* - [@matthewchan15](https://github.com/matthewchan15)
 
 See also the list of [contributors](https://github.com/plotly/dash-svm/contributors) who participated in this project.
+
+adaptation for CDSW / CML : * **Matthieu Lamairesse**
 
 ## License
 
@@ -78,5 +63,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 The heatmap configuration is heavily inspired from the [scikit-learn Classification Comparison Tutorial](http://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html). Please go take a look!
 
 The idea of the [ROC Curve, the Matrix Pie Chart and Thresholding](https://github.com/nicolaskruchten/dash-roc) came from @nickruchten. The app would not have been as complete without his insightful advice.
-
-## Screenshots
